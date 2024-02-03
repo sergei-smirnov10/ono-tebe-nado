@@ -310,7 +310,7 @@ header {
   width: 100%;
   display: flex;
   margin: 180px 0 0;
-  padding: 50px;
+  padding: 0 50px 0;
   gap: 25px;
   font-family: Raleway;
 }
