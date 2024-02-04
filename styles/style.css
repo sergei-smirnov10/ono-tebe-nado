@@ -40,7 +40,6 @@ header {
   font-family: Raleway;
   font-size: 18px;
   margin: 92px 0 0;
-  
 }
 
 .header-wrapper {
@@ -49,7 +48,6 @@ header {
   /* display: flex;
   align-items: center; */
   /* justify-content:space-around; */
-
   margin:0  auto 0;
   align-items: center; 
   width: 100%;
