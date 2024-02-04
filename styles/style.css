@@ -1,4 +1,4 @@
-/*=============================================|     BASE      |=============================================*/
+/*=============================================|     BASE     |=============================================*/
 * {
     margin: 0;
     padding: 0;
@@ -35,9 +35,12 @@
 
 /*=============================================|     HEADER     |=============================================*/
 header {
-    width: 100%;
-    font-family: Raleway;
-    font-size: 18px;
+  width: 100%;
+  height: 109px;
+  font-family: Raleway;
+  font-size: 18px;
+  margin: 92px 0 0;
+  
 }
 
 .header-wrapper {
@@ -47,22 +50,31 @@ header {
   align-items: center; */
   /* justify-content:space-around; */
 
-  margin: 92px auto 0;
-
+  margin:0  auto 0;
+  align-items: center; 
   width: 100%;
+  height: 100%;
   max-width: 1340px;
 }
 
 .header__links {
   display: flex;
   justify-content: flex-start;
-  gap: 13px;
+  gap: 14.3px;
+  letter-spacing: -.06px;
+  margin-left: 1px;
 }
 
 .link {
   display: flex;
-  gap: 13px;
+  gap: 11.9px;
   align-items: center;
+  line-height: 23px;
+}
+
+.link svg {
+  margin-top: 3px;
+  /* margin-left: 1px; */
 }
 
 .cursor-pointer {
@@ -71,12 +83,13 @@ header {
 
 .underline {
   text-decoration: underline;
-  text-underline-offset: .25em;
+  text-underline-offset: .2em;
 
 }
 
 .current {
   text-decoration: none;
+  line-height: 21px;
 }
 
 .header__logo {
@@ -89,16 +102,21 @@ header {
 
 .header__logo svg {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -4px;
+  left: 1px;
 }
+.header__logo-title {
+  top: -3px !important;
 
+}
 .header__contacts {
   display: flex;
   flex-direction: column;
-  gap: .25em;
+  /* gap: .25em; */
   justify-self: end;
   width: 240px;
+  line-height: 24.3px;
+  margin-right: -1px;
   
 }
 
@@ -111,7 +129,7 @@ header {
 .cover {
   width: 100%;
   height: 757px;
-  margin-top: 93px;
+  margin-top: 92px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,34 +150,37 @@ header {
 
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 165px 50px 0;
+  /* gap: 8px; */
+  padding: 164px 50px 0;
 }
 
 .aligned-text {
   -webkit-text-stroke: 1px #000;
   text-stroke: 1px #000;
+  margin-bottom: 10px;
 }
 
 .aligned-text_center {
   align-self: center;
-  margin-left: -45px;
+  margin-left: -60px;
+  margin-bottom: 2.5px;
 }
 
 .aligned-text_right {
   align-self: flex-end;
+  /* margin-right: -1px; */
 }
 
 .letter-spacing-extended {
-  letter-spacing: 31px;
+  letter-spacing: 30px;
 }
 
 .letter-spacing-margin-left {
-  margin-left: 28px;
+  margin-left: 30px;
 }
 
 .letter-spacing-margin-right {
-  margin-right: 51px;
+  margin-right: 60px;
 
 }
 
@@ -168,15 +189,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 80px;
-  margin-top: 125px;
+  gap: 78px;
+  margin-top: 127px;
+    /* margin-left: 2px; */
 }
 
 .cover__description-text {
   text-transform: uppercase;
   font-size: 22px;
   line-height: 28px;
-  word-spacing: 25px;
 }
 
 .bet-button {
@@ -205,12 +226,12 @@ header {
   font-weight: bold;
   color: #000;
   font-size: 40px;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   margin-left: 40px;
 }
 
 .lots__card-list {
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -249,7 +270,10 @@ header {
   padding: 0 40px;
   background-color: rgb(0, 0, 0, 60%);
 }
+.lots .underline {
+  text-underline-offset: 4.7px;
 
+}
 .card .underline {
   text-underline-offset: .15em;
   text-decoration-thickness: 1px;
@@ -287,11 +311,13 @@ header {
   margin-left: 40px;
 }
 
+
+
 /*=============================================|     SECTION 3      |=============================================*/
 .about {
   width: 100%;
   display: flex;
-  margin: 180px 0 0;
+  margin: 181px 0 0;
   padding: 0 50px 0;
   gap: 25px;
   font-family: Raleway;
@@ -317,7 +343,12 @@ header {
 
 .about__logo-image .svg-logo-halfsize {
   
-  top: 68px;
+  top: 64px;
+  left: 50px;
+}
+
+.about__logo-image .svg-logo-square {
+  top: 63px;
   left: 50px;
 }
 
@@ -325,18 +356,23 @@ header {
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 100px 0;
+  margin: 101px 0;
 }
 
 .about__text {
   font-size: 20px;
+  line-height: 115%;
+}
+
+.about__text-first-paragraph {
+  margin-bottom: 6px;
 }
 
 /*=============================================|     FOOTER     |=============================================*/
 footer {
-  margin-top: 180px;
-  margin-bottom: 190px;
+  margin-top: 183px;
   padding: 0 50px;
+  margin-bottom: 89px;
   display: flex;
   justify-content: space-between;
   font-family: Raleway;
@@ -345,19 +381,35 @@ footer {
 .footer__contacts {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  /* gap: 3px; */
+  line-height: 24px;
+  margin-top: 1px;
 }
 
 .footer__menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 2px;
+  justify-content: flex-start;
+  /* gap: 2px; */
+  line-height: 21px;
+  margin-left: 4px;
 }
 
 .footer__social-list {
   display: flex;
   gap: 48px;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.footer__menu .link-to-lots {
+  margin-bottom: -3px;
+  text-underline-offset: 4px;
+
+}
+
+.footer__menu .link-to-lots .underline {
+ 
+  text-underline-offset: 3px;
+
 }
