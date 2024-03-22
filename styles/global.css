@@ -32,3 +32,24 @@ a {
 img {
   width: 100%;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: circle;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto 0;
+}
+
+address {
+  font-style: normal;
+}
